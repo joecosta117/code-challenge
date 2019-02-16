@@ -1,4 +1,4 @@
-import React, { Component, Form } from 'react';
+import React, { Component } from 'react';
 
 class EmailForm extends Component {
   constructor(props) {

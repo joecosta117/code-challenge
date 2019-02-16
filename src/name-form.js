@@ -1,4 +1,4 @@
-import React, { Component, Form } from 'react';
+import React, { Component } from 'react';
 
 class NameForm extends Component {
   constructor(props) {
@@ -6,30 +6,42 @@ class NameForm extends Component {
     this.state = {
       email: '',
       firstName: '',
-      lastName: ''
+      lastName: '',
+      noNames: false
     }
     this.handleChange = this.handleChange.bind(this)
     this.handleSubmit = this.handleSubmit.bind(this)
   }
 
   handleChange(event) {
-    this.setState({email: event.target.value})
+    this.setState({[event.target.name]: event.target.value})
   }
 
   handleSubmit(event) {
-    alert('A name was submitted: ' + this.state.email);
+    if (this.state.firstName && this.state.lastName) {
+      alert(`A name was submitted: ${this.state.firstName} ${this.state.lastName}`);
+    } else {
+      this.setState({noNames: true})
+    }
     event.preventDefault();
   }
 
   render() {
+    console.log('this.state: ', this.state)
     return (
       <div>
         <form onSubmit={this.handleSubmit}>
           <label>
-          SIGN UP FOR THE TLC NEWSLETTER.
-            <input type="text" value={this.state.email} placeholder="enter email address" onChange={this.handleChange} />
+          {this.state.noNames === true && (
+            <span>ALMOST DONE! PLEASE ENTER YOUR FIRST AND LAST NAME.</span>
+          )}
+          {this.state.noNames === false && (
+            <span>SIGN UP FOR THE TLC NEWSLETTER.</span>
+          )}
+            <input type="text" name="firstName" value={this.state.firstName} placeholder="First Name" onChange={this.handleChange} />
+            <input type="text" name="lastName" value={this.state.lastName} placeholder="Last Name" onChange={this.handleChange} />
           </label>
-          <button type="submit" >NEXT</button>
+          <button type="submit" >SIGN UP</button>
         </form>
       </div>
     )
