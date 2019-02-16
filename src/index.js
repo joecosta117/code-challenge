@@ -4,9 +4,10 @@ import './index.css';
 import App from './App';
 import NameForm from './name-form'
 import EmailForm from './email-form'
+import FormContainer from './form-container'
 import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<NameForm />, document.getElementById('root'));
+ReactDOM.render(<FormContainer />, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
