@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import NameForm from './name-form'
 import EmailForm from './email-form'
+import CongratsForm from './congrats-form'
 
 class FormContainer extends Component {
   constructor(props) {
@@ -22,19 +23,16 @@ class FormContainer extends Component {
   }
 
   handleSubmit(event) {
-    alert('well done')
-    if ([event.target.name] === this.state.firstName || [event.target.name] === this.state.lastName) {
+    if (this.state.firstName || this.state.lastName) {
       if (this.state.firstName && this.state.lastName) {
         alert(`A name was submitted: ${this.state.firstName} ${this.state.lastName}`)
         this.setState({namesDone: true})
       } else {
         alert('Please enter your first and last name')
       }
-    } else if ([event.target.name] === this.state.email) {
+    } else if (this.state.email) {
       if (this.isValidEmail(this.state.email)) {
-        alert('A name was submitted: ' + this.state.email)
         this.setState({emailDone: true})
-        console.log(this.state.emailDone)
       } else {
         alert('Please enter a valid email address')
       }
@@ -52,6 +50,7 @@ class FormContainer extends Component {
         {!this.state.emailDone && (
           <EmailForm
             email={this.state.email}
+            emailDone={this.state.emailDone}
             handleSubmit={this.handleSubmit}
             handleChange={this.handleChange}
           />)}
@@ -62,11 +61,8 @@ class FormContainer extends Component {
             handleSubmit={this.handleSubmit}
             handleChange={this.handleChange}
           />)}
-        {this.state.namesDone && (
-          <div>
-            <h2>Thank You For Signing Up!</h2>
-            <span>Look out for the latest news on your favorite shows.</span>
-          </div>
+        {(this.state.namesDone && this.state.emailDone) && (
+          <CongratsForm />
         )}
       </div>
     )

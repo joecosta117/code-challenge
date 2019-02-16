@@ -1,7 +1,6 @@
-import React, { Component } from 'react';
-import FormContainer from './form-container'
+import React from 'react';
 
-const EmailForm = ({ email, handleChange, handleSubmit }) => {
+const EmailForm = ({ email, emailDone, handleChange, handleSubmit }) => {
   return (
     <div>
       <form onSubmit={handleSubmit}>

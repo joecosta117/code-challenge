@@ -1,9 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-import NameForm from './name-form'
-import EmailForm from './email-form'
 import FormContainer from './form-container'
 import * as serviceWorker from './serviceWorker';
 
