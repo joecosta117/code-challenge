@@ -25,7 +25,6 @@ class FormContainer extends Component {
   handleSubmit(event) {
     if (this.state.firstName || this.state.lastName) {
       if (this.state.firstName && this.state.lastName) {
-        alert(`A name was submitted: ${this.state.firstName} ${this.state.lastName}`)
         this.setState({namesDone: true})
       } else {
         alert('Please enter your first and last name')
@@ -54,7 +53,7 @@ class FormContainer extends Component {
             handleSubmit={this.handleSubmit}
             handleChange={this.handleChange}
           />)}
-        {this.state.emailDone && (
+        {(this.state.emailDone && !this.state.namesDone) && (
           <NameForm
             firstName={this.state.firstName}
             lastName={this.state.lastName}
