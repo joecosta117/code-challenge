@@ -1,10 +1,12 @@
 import React, { Component, Form } from 'react';
 
-class SignUp extends Component {
+class NameForm extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      email: ''
+      email: '',
+      firstName: '',
+      lastName: ''
     }
     this.handleChange = this.handleChange.bind(this)
     this.handleSubmit = this.handleSubmit.bind(this)
@@ -25,7 +27,7 @@ class SignUp extends Component {
         <form onSubmit={this.handleSubmit}>
           <label>
           SIGN UP FOR THE TLC NEWSLETTER.
-            <input type="text" value={this.state.email} onChange={this.handleChange} />
+            <input type="text" value={this.state.email} placeholder="enter email address" onChange={this.handleChange} />
           </label>
           <button type="submit" >NEXT</button>
         </form>
@@ -33,3 +35,5 @@ class SignUp extends Component {
     )
   }
 }
+
+export default NameForm
