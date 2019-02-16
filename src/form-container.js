@@ -10,6 +10,7 @@ class FormContainer extends Component {
       email: '',
       firstName: '',
       lastName: '',
+      checked: false,
       emailDone: false,
       namesDone: false
     }
@@ -19,12 +20,17 @@ class FormContainer extends Component {
   }
 
   handleChange(event) {
-    this.setState({[event.target.name]: event.target.value})
+    if ([event.target.name] === this.state.checked) {
+      this.setState({checked: !this.state.checked})
+    } else {
+      this.setState({[event.target.name]: event.target.value})
+    }
   }
 
   handleSubmit(event) {
     if (this.state.firstName || this.state.lastName) {
       if (this.state.firstName && this.state.lastName) {
+        console.log('email: ', this.state.email, 'fist name: ', this.state.firstName, 'last name: ', this.state.lastName)
         this.setState({namesDone: true})
       } else {
         alert('Please enter your first and last name')
@@ -50,6 +56,7 @@ class FormContainer extends Component {
           <EmailForm
             email={this.state.email}
             emailDone={this.state.emailDone}
+            checked={this.state.checked}
             handleSubmit={this.handleSubmit}
             handleChange={this.handleChange}
           />)}
