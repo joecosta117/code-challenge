@@ -52,7 +52,7 @@ class FormContainer extends Component {
   render() {
     console.log("CHECKED", this.state.checked)
     return (
-      <div>
+      <div className="formContainer">
         {!this.state.emailDone && (
           <EmailForm
             email={this.state.email}

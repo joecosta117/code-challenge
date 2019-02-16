@@ -1,0 +1,85 @@
+.formContainer {
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 26.85%;
+  bottom: 44.7%;
+  background: #120F23;
+}
+
+.formTitle {
+  position: absolute;
+  left: 37.01%;
+  right: 13.26%;
+  top: 32.3%;
+  bottom: 63.68%;
+
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 30px;
+  font-size: 24px;
+
+  color: #94AEBF;
+}
+
+.formField {
+  position: absolute;
+  left: 37.15%;
+  right: 29.51%;
+  top: 39.06%;
+  bottom: 54.9%;
+
+  background: #FFFFFF;
+  mix-blend-mode: normal;
+  opacity: 0.1;
+  border-radius: 5px;
+}
+
+.button {
+  position: absolute;
+  left: 71.88%;
+  right: 17.78%;
+  top: 38.66%;
+  bottom: 54.63%;
+
+  background: #ED1F34;
+  border-radius: 5px;
+}
+
+.buttonText {
+  position: absolute;
+  left: 72.59%;
+  right: 18.64%;
+  top: 40.4%;
+  bottom: 56.38%;
+
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 24px;
+  font-size: 20px;
+  text-align: center;
+
+  color: #FFFFFF;
+}
+
+.agreement {
+  position: absolute;
+  left: 38.61%;
+  right: 36.74%;
+  top: 46.15%;
+  bottom: 50.09%;
+
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 14px;
+  font-size: 12px;
+
+  color: #888888;
+}
+
+input {
+  width: 30%;
+}
