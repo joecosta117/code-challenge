@@ -10,7 +10,7 @@ class FormContainer extends Component {
       email: '',
       firstName: '',
       lastName: '',
-      checked: false,
+      checked: true,
       emailDone: false,
       namesDone: false
     }
@@ -20,7 +20,7 @@ class FormContainer extends Component {
   }
 
   handleChange(event) {
-    if ([event.target.name] === this.state.checked) {
+    if (event.target.type === "checkbox") {
       this.setState({checked: !this.state.checked})
     } else {
       this.setState({[event.target.name]: event.target.value})
@@ -50,6 +50,7 @@ class FormContainer extends Component {
   }
 
   render() {
+    console.log("CHECKED", this.state.checked)
     return (
       <div>
         {!this.state.emailDone && (
