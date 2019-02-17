@@ -86,7 +86,6 @@ input[type=text] {
   bottom: 54.63%;
   font-size: 200%
   padding: 20px;
-
   background: #ED1F34;
   border-radius: 5px;*/
   background-color: #ED1F34; /* Green */
@@ -387,4 +386,19 @@ input[type=checkbox] {
   font-size: 71%;
   color: #888888;
 }
+
+/*#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+#content-wrap {
+  padding-bottom: 2.5rem;
+}*/
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;            /* Footer height */
 }

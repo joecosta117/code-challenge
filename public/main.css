@@ -1,0 +1,255 @@
+#mainPage {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+#otherContent {
+  height: 85vh;
+}
+
+#formContainer {
+  display: flex;
+  flex-direction: column;
+  height: 15vh;
+  padding: 2%;
+  text-align: center;
+  background: #120F23;
+  justify-content: center;
+  align-items: center;
+}
+
+#container {
+  width: 30%;
+}
+
+#formTitle {
+  display: inline;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 200%;
+  margin-right: 0;
+  /*font-size: 120%;*/
+  text-align: left;
+  color: #94AEBF;
+  align-self: flex-start;
+}
+
+/*.item {
+  display: flex;
+  text-align: center;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}*/
+
+#inputForm {
+  display: flex;
+  text-align: center;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.formField {
+  /*padding: 16px 10px;*/
+  background: #2A2739;
+  mix-blend-mode: normal;
+  /*opacity: 0.1;*/
+  border-radius: 5px;
+  border: none;
+  border-color: transparent;
+}
+
+input[type=text] {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 32px;
+  font-size: 24px;
+  height: 1em;
+  color: #FFFFFF;
+  opacity: 0.5;
+  mix-blend-mode: normal;
+  border-radius: 2px;
+}
+
+::placeholder {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 32px;
+  font-size: 24px;
+  color: #FFFFFF;
+  opacity: 0.5;
+  mix-blend-mode: normal;
+}
+
+.button {
+  width: 7vw;
+  background-color: #ED1F34;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 34%;
+  height: 3em;
+  border-radius: 2px;
+  margin-left: 10px;
+  cursor: pointer;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  /* line-height: 24px; */
+  font-size: 0.75em;
+  text-align: center;
+  height: 2.5em;
+}
+
+#checkAgreement {
+  margin-left: 6%;
+  padding-top: 0.25em;
+  display: flex;
+  text-align: center;
+   flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 55%;
+  flex-basis: 10em;
+  align-content: center;}
+
+input[type=checkbox] {
+  /*position: absolute;
+  left: 34.5%;
+  right: 36.74%;
+  top: 70.15%;
+  bottom: 50.09%;*/
+  /*margin-right: 0.5em;*/
+  margin-right: 0;
+}
+
+.agreement {
+  text-align: left;
+  width: 250px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 300;
+  /*line-height: 90%;*/
+  font-size: 10%;
+  color: #888888;
+  margin-left: 0.5vw;
+  display: block;
+  word-wrap: break-word;
+  /*width: 250px;*/
+}
+
+@media only screen and (min-width: 320px){
+  #otherContent {
+    height: 65vh;
+  }
+
+  #formContainer {
+    display: flex;
+    flex-direction: column;
+    height: 35vh;
+    padding: 2%;
+    text-align: center;
+    background: #120F23;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #container {
+    width: 90%;
+  }
+
+  #formTitle {
+    display: inline;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 125%;
+    font-size: 95%;
+    text-align: left;
+    color: #94AEBF;
+    align-self: flex-start;
+    /* width: 46%; */
+  }
+
+  #inputForm {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: 0.5em;
+  }
+
+  #formField {
+    /*padding: 16px 10px;*/
+    background: #2A2739;
+    mix-blend-mode: normal;
+    /*opacity: 0.1;*/
+    border-radius: 5px;
+    /*border: none;*/
+    border-color: transparent;
+  }
+
+  input[type=text] {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    height: 2em;
+    color: #FFFFFF;
+    opacity: 0.5;
+    mix-blend-mode: normal;
+    border-radius: 2px;
+    width: 88%;
+  }
+
+  ::placeholder {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 32px;
+    font-size: 16px;
+    padding-left: 10px;
+    color: #FFFFFF;
+    opacity: 0.5;
+    mix-blend-mode: normal;
+  }
+
+  .button {
+    width: 76vw;
+    background-color: #ED1F34;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 34%;
+    height: 3em;
+    border-radius: 2px;
+    margin-left: 0px;
+    cursor: pointer;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    /* line-height: 24px; */
+    font-size: 0.8em;
+    text-align: center;
+    height: 2.5em;
+  }
+}
+
+/*@media only screen and (max-width: 600px){
+  #inputForm {
+    flex-wrap: wrap;
+  }
+}*/
