@@ -1,4 +1,4 @@
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 601px){
   #formContainer {
     position: absolute;
     bottom: 0;
@@ -12,24 +12,38 @@
     background: #120F23;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+  }
+    .formTitle {
+    font-size: 120%;
   }
 }
 
-@media only screen and (max-width: 767px){
+@media only screen and (max-width: 720px){
+  .formTitle {
+    font-size: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px){
   #formContainer {
-    position: absolute;
-    bottom: 0;
+    /*position: absolute;*/
+    /*bottom: 0;*/
     width: 100%;
-    height: 25%;
+    height: 50%;
     left: 0%;
+    text-align: center;
+    /*right: 0%;
+    top: 26.85%;
+    bottom: 44.7%;*/
     background: #120F23;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
   }
-};
-
-.item {
-  margin: 30px;
+  .formTitle {
+    font-size: 80%;
+  }
 }
 
 .formTitle {
@@ -38,12 +52,13 @@
   right: 13.26%;
   top: 32.3%;
   bottom: 63.68%;
-
+  display: inline;
+  /*line-height: 1;*/
   font-family: Open Sans;
   font-style: normal;
   font-weight: bold;
   line-height: 200%;
-  font-size: 120%;
+  /*font-size: 120%;*/
   text-align: left;
 
   color: #94AEBF;
@@ -59,7 +74,7 @@
   display: flex;
   text-align: center;
   /*justify-content: space-between;*/
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 .formField {
@@ -157,6 +172,7 @@ input[type=checkbox] {
   right: 36.74%;
   top: 70.15%;
   bottom: 50.09%;
+  margin-left: 5px;
 }
 
 .agreement {
@@ -170,8 +186,8 @@ input[type=checkbox] {
   font-family: Open Sans;
   font-style: normal;
   font-weight: 300;
-  line-height: 14px;
-  font-size: 12px;
+  line-height: 90%;
+  font-size: 70%;
 
   color: #888888;
 }
