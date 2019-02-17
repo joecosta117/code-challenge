@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import FormContainer from './form-container'
+import React from 'react';
+import FormContainer from './forms/form-container'
 
 const Main = () => (
   <div id="mainPage">

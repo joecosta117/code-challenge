@@ -1,6 +1,6 @@
 import React from 'react';
 
-const EmailForm = ({ email, emailDone, checked, handleChange, handleSubmit }) => (
+const EmailForm = ({ email, checked, handleChange, handleSubmit }) => (
     <div id="container">
       <p id="formTitle" className="item" >SIGN UP FOR THE TLC NEWSLETTER</p>
         <form onSubmit={handleSubmit} className="item">

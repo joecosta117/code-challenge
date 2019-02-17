@@ -30,7 +30,7 @@ class FormContainer extends Component {
   handleSubmit(event) {
     if (this.state.firstName || this.state.lastName) {
       if (this.state.firstName && this.state.lastName) {
-        console.log('email: ', this.state.email, 'fist name: ', this.state.firstName, 'last name: ', this.state.lastName)
+        console.log('email: ', this.state.email, 'first name: ', this.state.firstName, 'last name: ', this.state.lastName)
         this.setState({namesDone: true})
       } else {
         alert('Please enter your first and last name')
@@ -55,7 +55,6 @@ class FormContainer extends Component {
         {!this.state.emailDone && (
           <EmailForm
             email={this.state.email}
-            emailDone={this.state.emailDone}
             checked={this.state.checked}
             handleSubmit={this.handleSubmit}
             handleChange={this.handleChange}
@@ -67,7 +66,7 @@ class FormContainer extends Component {
             handleSubmit={this.handleSubmit}
             handleChange={this.handleChange}
           />)}
-        {(this.state.namesDone && this.state.emailDone) && (
+        {this.state.namesDone && (
           <CongratsForm />
         )}
       </div>

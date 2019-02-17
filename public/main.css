@@ -262,7 +262,7 @@
     width: 50%;
     display: flex;
     text-align: center;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
@@ -271,6 +271,9 @@
 
   #formTitle {
     display: inline;
+    position: absolute;
+    bottom: 12%;
+    left: 27%;
     font-family: Open Sans;
     font-style: normal;
     font-weight: bold;
@@ -313,7 +316,7 @@
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: flex-end;
   }
 
   #nameForm {
@@ -385,7 +388,7 @@
   }
 
   .button {
-    width: 13vw;
+    width: 11vw;
     background-color: #ED1F34;
     border: none;
     color: white;
@@ -420,7 +423,7 @@
   }
 
   #checkAgreement {
-    margin-left: 7%;
+    margin-left: 9%;
     padding-top: 0.5em;
     display: flex;
     text-align: left;
