@@ -5,7 +5,7 @@ const EmailForm = ({ email, emailDone, checked, handleChange, handleSubmit }) =>
       <p id="formTitle" className="item" >SIGN UP FOR THE TLC NEWSLETTER</p>
         <form onSubmit={handleSubmit} className="item">
           <div id="inputForm">
-            <input type="text" name="email" value={email} placeholder="enter email address" className="formField" onChange={handleChange} />
+            <input type="text" name="email" value={email} placeholder="enter email address" id="formField" onChange={handleChange} />
             <button type="submit" className="button">NEXT</button>
           </div>
         </form>
