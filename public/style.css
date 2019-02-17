@@ -186,13 +186,10 @@ input[type=checkbox] {
     flex-wrap: wrap;
   }
   .formTitle {
-    font-size: 80%;
-  }
-  .formTitle {
     position: absolute;
-    left: 21%;
+    left: 13%;
     right: 10.26%;
-    top: 35%;
+    top: 32%;
     bottom: 63.68%;
     display: inline;
     /* line-height: 1; */
@@ -200,7 +197,7 @@ input[type=checkbox] {
     font-style: normal;
     font-weight: bold;
     line-height: 200%;
-    font-size: 110%;
+    font-size: 130%;
     text-align: center;
     color: #94AEBF;
   }
@@ -209,9 +206,9 @@ input[type=checkbox] {
     /* left: 7%; */
     font-style: normal;
     font-weight: normal;
-    line-height: 30%;
-    font-size: 200%;
-    height: 1em;
+    line-height: 11%;
+    font-size: 242%;
+    height: 6vw;
     color: #FFFFFF;
     opacity: 0.5;
     mix-blend-mode: normal;
@@ -229,8 +226,8 @@ input[type=checkbox] {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
-    height: 2.0em;
+    font-size: 18px;
+    height: 2.5em;
     padding-left: 9%;
     padding-right: 9%;
     border-radius: 2px;
@@ -241,9 +238,9 @@ input[type=checkbox] {
   #inputForm {
     /* width: 30%; */
     position: absolute;
-    left: 29.15%;
+    left: 20.15%;
     right: 29.51%;
-    top: 50.06%;
+    top: 50%;
     bottom: 54.9%;
     display: flex;
     text-align: center;
@@ -251,10 +248,143 @@ input[type=checkbox] {
     /* justify-content: space-between; */
     flex-wrap: nowrap;
   }
+  input[type=checkbox] {
+    position: absolute;
+    left: 20%;
+    right: 36.74%;
+    top: 73%;
+    bottom: 50.09%;
+    margin-left: 5px;
+  }
+  .agreement {
+    position: absolute;
+    left: 24%;
+    right: 36.74%;
+    top: 74%;
+    bottom: 50.09%;
+    text-align: left;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 100%;
+    font-size: 79%;
+    color: #888888;
+    width: 44%;
+  }
 }
 
-@media only screen and (min-width: 1200px){
+@media only screen and (min-width: 1000px){
   .formTitle {
-    font-size: 100%;
+    position: absolute;
+    left: 35.01%;
+    right: 13.26%;
+    top: 22.3%;
+    bottom: 63.68%;
+    display: inline;
+    /* line-height: 1; */
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 200%;
+    font-size: 120%;
+    text-align: left;
+    color: #94AEBF;
   }
+
+#inputForm {
+  width: 30%;
+  position: absolute;
+  left: 35%;
+  right: 29.51%;
+  top: 45.06%;
+  bottom: 54.9%;
+  display: flex;
+  text-align: center;
+  flex-direction: row;
+  /* justify-content: space-between; */
+  flex-wrap: nowrap;
+}
+
+.formField {
+  /*padding: 16px 10px;*/
+  background: #2A2739;
+  mix-blend-mode: normal;
+  /*opacity: 0.1;*/
+  border-radius: 5px;
+  border: none;
+  border-color: transparent;
+}
+
+input[type=text] {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 100%;
+  font-size: 225%;
+  height: 1em;
+  color: #FFFFFF;
+  opacity: 0.5;
+  mix-blend-mode: normal;
+  border-radius: 2px;
+}
+
+.button {
+  background-color: #ED1F34;
+  left: 71.88%;
+  right: 17.78%;
+  top: 38.66%;
+  bottom: 54.63%;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 110%;
+  height: 2.2em;
+  border-radius: 2px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.buttonText {
+  position: absolute;
+  left: 72.59%;
+  right: 18.64%;
+  top: 40.4%;
+  bottom: 56.38%;
+
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 24px;
+  font-size: 20px;
+  text-align: center;
+
+  color: #FFFFFF;
+}
+
+input[type=checkbox] {
+  position: absolute;
+  left: 34.5%;
+  right: 36.74%;
+  top: 70.15%;
+  bottom: 50.09%;
+  margin-left: 6px;
+}
+
+.agreement {
+  position: absolute;
+  left: 37%;
+  right: 36.74%;
+  top: 72.15%;
+  bottom: 50.09%;
+  text-align: left;
+  width: 30%;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 90%;
+  font-size: 71%;
+  color: #888888;
+}
 }
