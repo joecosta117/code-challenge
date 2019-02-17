@@ -161,6 +161,17 @@ input[type=checkbox] {
     width: 90%;
   }
 
+  #congratsContainer {
+    width: 70%;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: 0.5em;
+  }
+
   #formTitle {
     display: inline;
     font-family: Open Sans;
@@ -171,7 +182,32 @@ input[type=checkbox] {
     text-align: left;
     color: #94AEBF;
     align-self: flex-start;
-    /* width: 46%; */
+  }
+
+  #congratsTitle {
+    display: inline;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 125%;
+    font-size: 130%;
+    text-align: center;
+    color: #94AEBF;
+    width: 90%;
+    align-self: flex-start;
+    margin-bottom: 0%;
+  }
+
+  #minorText {
+    display: inline;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 125%;
+    font-size: 100%;
+    text-align: center;
+    color: #94AEBF;
+    align-self: flex-start
   }
 
   #inputForm {
@@ -283,6 +319,25 @@ input[type=checkbox] {
     height: 2.5em;
     margin-top: 1em;
   }
+
+  .finalButton {
+    width: 78vw;
+    background-color: #ED1F34;
+    border: none;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 2px;
+    margin-left: 0px;
+    cursor: pointer;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 0.8em;
+    text-align: center;
+    height: 2.5em;
+    margin-top: 1em;
+  }
 }
 
 
@@ -310,6 +365,17 @@ input[type=checkbox] {
     width: 60%;
   }
 
+  #congratsContainer {
+    width: 50%;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: 0.5em;
+  }
+
   #formTitle {
     display: inline;
     font-family: Open Sans;
@@ -317,10 +383,35 @@ input[type=checkbox] {
     font-weight: bold;
     line-height: 200%;
     margin-right: 0;
-    /*font-size: 120%;*/
     text-align: left;
     color: #94AEBF;
     align-self: flex-start;
+  }
+
+  #congratsTitle {
+    display: inline;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 125%;
+    font-size: 130%;
+    text-align: center;
+    color: #94AEBF;
+    width: 90%;
+    align-self: center;
+    margin-bottom: 0%;
+  }
+
+  #minorText {
+    display: inline;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 125%;
+    font-size: 100%;
+    text-align: center;
+    color: #94AEBF;
+    align-self: center;
   }
 
   #inputForm {
