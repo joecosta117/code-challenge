@@ -184,6 +184,16 @@ input[type=checkbox] {
     padding-top: 0.5em;
   }
 
+  #nameForm {
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: 0.5em;
+  }
+
   #formField {
     /*padding: 16px 10px;*/
     background: #2A2739;
@@ -194,7 +204,17 @@ input[type=checkbox] {
     border-color: transparent;
   }
 
-  input[type=text] {
+  #nameField {
+    /*padding: 16px 10px;*/
+    background: #2A2739;
+    mix-blend-mode: normal;
+    /*opacity: 0.1;*/
+    border-radius: 5px;
+    /*border: none;*/
+    border-color: transparent;
+  }
+
+  input[name=email] {
     font-family: Open Sans;
     font-style: normal;
     font-weight: normal;
@@ -205,6 +225,32 @@ input[type=checkbox] {
     mix-blend-mode: normal;
     border-radius: 2px;
     width: 88%;
+  }
+
+  input[name=firstName] {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    height: 2em;
+    color: #FFFFFF;
+    opacity: 0.5;
+    mix-blend-mode: normal;
+    border-radius: 2px;
+    width: 42%;
+  }
+
+  input[name=lastName] {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    height: 2em;
+    color: #FFFFFF;
+    opacity: 0.5;
+    mix-blend-mode: normal;
+    border-radius: 2px;
+    width: 42%;
   }
 
   ::placeholder {
@@ -220,25 +266,22 @@ input[type=checkbox] {
   }
 
   .button {
-    width: 76vw;
+    width: 78vw;
     background-color: #ED1F34;
     border: none;
     color: white;
-    text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 34%;
-    height: 3em;
     border-radius: 2px;
     margin-left: 0px;
     cursor: pointer;
     font-family: Open Sans;
     font-style: normal;
     font-weight: bold;
-    /* line-height: 24px; */
     font-size: 0.8em;
     text-align: center;
     height: 2.5em;
+    margin-top: 1em;
   }
 }
 
@@ -289,6 +332,15 @@ input[type=checkbox] {
     align-items: center;
   }
 
+  #nameForm {
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
   .formField {
     /*padding: 16px 10px;*/
     background: #2A2739;
@@ -299,7 +351,7 @@ input[type=checkbox] {
     border-color: transparent;
   }
 
-  input[type=text] {
+  input[name=email] {
     width: 35vw;
     font-family: Open Sans;
     font-style: normal;
@@ -311,6 +363,36 @@ input[type=checkbox] {
     opacity: 0.5;
     mix-blend-mode: normal;
     border-radius: 2px;
+  }
+
+  input[name=firstName] {
+    width: 15vw;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    /*line-height: 32px;*/
+    font-size: 24px;
+    height: 1.5em;
+    color: #FFFFFF;
+    opacity: 0.5;
+    mix-blend-mode: normal;
+    border-radius: 2px;
+    margin-right: 1em;
+  }
+
+  input[name=lastName] {
+    width: 15vw;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    /*line-height: 32px;*/
+    font-size: 24px;
+    height: 1.5em;
+    color: #FFFFFF;
+    opacity: 0.5;
+    mix-blend-mode: normal;
+    border-radius: 2px;
+    margin-right: 0.5em;
   }
 
   .button {
@@ -328,6 +410,24 @@ input[type=checkbox] {
     font-weight: bold;
     font-size: 0.75em;
     height: 3.25em;
+  }
+
+  .finalButton {
+    width: 13vw;
+    background-color: #ED1F34;
+    border: none;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 2px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 0.75em;
+    height: 3.3em;
+    margin-bottom: 0.1em;
   }
 
   #checkAgreement {
