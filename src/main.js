@@ -4,7 +4,7 @@ import FormContainer from './form-container'
 const Main = () => (
   <div id="mainPage">
     <div id="otherContent">
-      Hello World!
+      <p className="introText">Code Challenge by Joe Costa</p>
     </div>
     <FormContainer />
   </div>

@@ -6,140 +6,19 @@
 
 #otherContent {
   height: 85vh;
+  background-color: #E9EBEE;
 }
 
-#formContainer {
-  display: flex;
-  flex-direction: column;
-  height: 15vh;
-  padding: 2%;
+.introText {
+  font-size: 400%;
+  margin-bot: 10%;
   text-align: center;
-  background: #120F23;
   justify-content: center;
-  align-items: center;
-}
-
-#container {
-  width: 30%;
-}
-
-#formTitle {
-  display: inline;
   font-family: Open Sans;
   font-style: normal;
   font-weight: bold;
-  line-height: 200%;
-  margin-right: 0;
-  /*font-size: 120%;*/
-  text-align: left;
   color: #94AEBF;
-  align-self: flex-start;
 }
-
-#inputForm {
-  display: flex;
-  text-align: center;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
-.formField {
-  /*padding: 16px 10px;*/
-  background: #2A2739;
-  mix-blend-mode: normal;
-  /*opacity: 0.1;*/
-  border-radius: 5px;
-  border: none;
-  border-color: transparent;
-}
-
-input[type=text] {
-  font-family: Open Sans;
-  font-style: normal;
-  font-weight: normal;
-  line-height: 32px;
-  font-size: 24px;
-  height: 1em;
-  color: #FFFFFF;
-  opacity: 0.5;
-  mix-blend-mode: normal;
-  border-radius: 2px;
-}
-
-::placeholder {
-  font-family: Open Sans;
-  font-style: normal;
-  font-weight: normal;
-  line-height: 32px;
-  font-size: 24px;
-  color: #FFFFFF;
-  opacity: 0.5;
-  mix-blend-mode: normal;
-}
-
-.button {
-  width: 7vw;
-  background-color: #ED1F34;
-  border: none;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 34%;
-  height: 3em;
-  border-radius: 2px;
-  margin-left: 10px;
-  cursor: pointer;
-  font-family: Open Sans;
-  font-style: normal;
-  font-weight: bold;
-  /* line-height: 24px; */
-  font-size: 0.75em;
-  text-align: center;
-  height: 2.5em;
-}
-
-#checkAgreement {
-  margin-left: 6%;
-  padding-top: 0.5em;
-  display: flex;
-  text-align: center;
-   flex-direction: row;
-  justify-content: center;
-  /*align-items: center;*/
-  width: 80%;
-  flex-basis: 10em;
-  align-content: center;}
-
-input[type=checkbox] {
-  /*position: absolute;
-  left: 34.5%;
-  right: 36.74%;
-  top: 70.15%;
-  bottom: 50.09%;*/
-  /*margin-right: 0.5em;*/
-  margin-right: 0;
-}
-
-.agreement {
-  text-align: left;
-  width: 250px;
-  font-family: Open Sans;
-  font-style: normal;
-  font-weight: 300;
-  /*line-height: 90%;*/
-  font-size: 10%;
-  color: #888888;
-  margin-left: 0.5vw;
-  display: block;
-  word-wrap: break-word;
-  /*width: 250px;*/
-}
-
-
-
 
 @media only screen and (min-width: 320px){
   #otherContent {
@@ -231,23 +110,42 @@ input[type=checkbox] {
   }
 
   #formField {
-    /*padding: 16px 10px;*/
     background: #2A2739;
     mix-blend-mode: normal;
-    /*opacity: 0.1;*/
     border-radius: 5px;
-    /*border: none;*/
     border-color: transparent;
   }
 
   #nameField {
-    /*padding: 16px 10px;*/
     background: #2A2739;
     mix-blend-mode: normal;
-    /*opacity: 0.1;*/
     border-radius: 5px;
-    /*border: none;*/
     border-color: transparent;
+  }
+
+  #checkAgreement {
+    margin-left: 6%;
+    padding-top: 0.5em;
+    display: flex;
+    text-align: center;
+     flex-direction: row;
+    justify-content: center;
+    width: 80%;
+    flex-basis: 10em;
+    align-content: center;
+  }
+
+  .agreement {
+    text-align: left;
+    width: 250px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 10%;
+    color: #888888;
+    margin-left: 0.5vw;
+    display: block;
+    word-wrap: break-word;
   }
 
   input[name=email] {
@@ -340,10 +238,6 @@ input[type=checkbox] {
   }
 }
 
-
-
-
-
 @media only screen and (min-width: 700px){
   #otherContent {
     height: 85vh;
@@ -361,7 +255,6 @@ input[type=checkbox] {
   }
 
   #container {
-    /*width: 700px;*/
     width: 60%;
   }
 
@@ -433,12 +326,9 @@ input[type=checkbox] {
   }
 
   .formField {
-    /*padding: 16px 10px;*/
     background: #2A2739;
     mix-blend-mode: normal;
-    /*opacity: 0.1;*/
     border-radius: 5px;
-    /*border: none;*/
     border-color: transparent;
   }
 
@@ -447,7 +337,6 @@ input[type=checkbox] {
     font-family: Open Sans;
     font-style: normal;
     font-weight: normal;
-    /*line-height: 32px;*/
     font-size: 24px;
     height: 1.5em;
     color: #FFFFFF;
@@ -461,7 +350,6 @@ input[type=checkbox] {
     font-family: Open Sans;
     font-style: normal;
     font-weight: normal;
-    /*line-height: 32px;*/
     font-size: 24px;
     height: 1.5em;
     color: #FFFFFF;
@@ -476,7 +364,6 @@ input[type=checkbox] {
     font-family: Open Sans;
     font-style: normal;
     font-weight: normal;
-    /*line-height: 32px;*/
     font-size: 24px;
     height: 1.5em;
     color: #FFFFFF;
@@ -484,6 +371,17 @@ input[type=checkbox] {
     mix-blend-mode: normal;
     border-radius: 2px;
     margin-right: 0.5em;
+  }
+
+  ::placeholder {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 32px;
+    font-size: 24px;
+    color: #FFFFFF;
+    opacity: 0.5;
+    mix-blend-mode: normal;
   }
 
   .button {
@@ -528,19 +426,12 @@ input[type=checkbox] {
     text-align: left;
     flex-direction: row;
     justify-content: left;
-    /* align-items: center; */
     width: 80%;
     flex-basis: 10em;
     align-content: center;
   }
 
   input[type=checkbox] {
-    /*position: absolute;
-    left: 34.5%;
-    right: 36.74%;
-    top: 70.15%;
-    bottom: 50.09%;*/
-    /*margin-right: 0.5em;*/
     margin-right: 0;
   }
 
@@ -550,7 +441,6 @@ input[type=checkbox] {
     font-family: Open Sans;
     font-style: normal;
     font-weight: 300;
-    /*line-height: 90%;*/
     font-size: 65%;
     color: #888888;
     margin-left: 0.75vw;
