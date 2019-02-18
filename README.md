@@ -18,6 +18,8 @@ This footer UI can be viewed through the provided zip file.
 ### Tablet Landscape View
 ![Alt text](https://media.giphy.com/media/7A4BeDcLD24FLNBp0W/giphy.gif)
 
-### Mobile View (shows forms are required)
+### Mobile View
+![Alt text](https://media.giphy.com/media/2Ymjxdo5teatHVeIfk/giphy.gif)
+
 
 
