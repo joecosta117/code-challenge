@@ -12,3 +12,6 @@ This footer UI can be viewed through the provided zip file.
 ### Fullscreen
 ![Alt text](https://media.giphy.com/media/fe3X8JjcSuYFRn6Hp2/giphy.gif)
 
+### Tablet Portrait View
+![Alt text](https://media.giphy.com/media/39n4YPqNb4gvCGH1id/giphy.gif)
+
