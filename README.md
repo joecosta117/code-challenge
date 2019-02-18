@@ -10,7 +10,7 @@ This footer UI can be viewed through the provided zip file.
 ## GIFs of UI in Work
 
 ### Desktop View
-![Alt text](https://media.giphy.com/media/fe3X8JjcSuYFRn6Hp2/giphy.gif)
+![Alt text](https://media.giphy.com/media/69vdGe1kimrIETiqaI/giphy.gif)
 
 ### Tablet Portrait View
 ![Alt text](https://media.giphy.com/media/39n4YPqNb4gvCGH1id/giphy.gif)
