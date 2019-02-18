@@ -3,6 +3,7 @@
 This footer UI can be viewed through the provided zip file.
 
 ### To View the UI
+- git clone
 - npm install
 - npm start
 - navigate to http://localhost:3000/
